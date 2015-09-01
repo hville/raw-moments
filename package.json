@@ -1,6 +1,6 @@
 {
   "name": "raw-moments",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "single sample raw moment or array of multiple moments",
   "author": "Hugo Villeneuve",
   "license": "MIT",
