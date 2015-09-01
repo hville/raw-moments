@@ -1,28 +1,27 @@
 {
-	"name": "raw-moments",
-	"version": "0.1.0",
-	"description": "single sample raw moment or array of multiple moments",
-	"author": "Hugo Villeneuve",
-	"license": "MIT",
-	"keywords": [
-		"array",
-		"stats",
-		"statistics",
-		"sample",
-		"moment",
-		"moments",
-		"raw moment",
-		"origin moment"
-	],
-
-	"main": "./index.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/hville/raw-moments"
-	},
-	"files": [
-		"./index.js"
-	],
+  "name": "raw-moments",
+  "version": "0.1.1",
+  "description": "single sample raw moment or array of multiple moments",
+  "author": "Hugo Villeneuve",
+  "license": "MIT",
+  "keywords": [
+    "array",
+    "stats",
+    "statistics",
+    "sample",
+    "moment",
+    "moments",
+    "raw moment",
+    "origin moment"
+  ],
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hville/raw-moments"
+  },
+  "files": [
+    "./index.js"
+  ],
   "devDependencies": {
     "tape": "4.2.0"
   },
