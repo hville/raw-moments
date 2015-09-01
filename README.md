@@ -12,7 +12,7 @@
 
 Returns the average(s) of values raised to one or more exponents.
 
-*E<sub>k</sub> = E[ X<sup>k</sup> ]*
+*E<sub>k</sub> = E[ X^k ]*
 
 
 
