@@ -1,6 +1,6 @@
 {
   "name": "raw-moments",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "single sample raw moment or array of multiple moments",
   "author": "Hugo Villeneuve",
   "license": "MIT",
@@ -19,17 +19,15 @@
     "type": "git",
     "url": "https://github.com/hville/raw-moments"
   },
-  "files": [
-    "./index.js"
-  ],
   "devDependencies": {
-    "tape": "4.2.0"
+    "tt": "1.0.3",
+    "untap": "0.0.4"
   },
   "engines": {
     "node": ">= 0.10.0",
     "npm": "2.x"
   },
   "scripts": {
-    "test": "tape test/**/*.js"
+    "test": "node test.js | untap"
   }
 }

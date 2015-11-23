@@ -18,7 +18,7 @@ Returns the average(s) of values raised to one or more exponents.
 
 ## Installation
 
-In node, from the root of your project folder type `npm install --save raw-moments`.
+In node, from the root of the project folder type `npm install --save raw-moments`.
 
 
 
@@ -28,9 +28,9 @@ In node, from the root of your project folder type `npm install --save raw-momen
 
 With a single exponent, `rawMoments(samples, k)` return the single *k<sup>th</sup>* raw moment.
 
-		var rawMoments = require('raw-moments')
-		rawMoments([0, 1, 2], 2)    // return (0 + 1^2 + 2^2)/3 = 5/3
-		rawMoments([1/4, 1/2, 1], -1)    // return (4 + 2 + 1)/3 = 5/3
+    var rawMoments = require('raw-moments')
+    rawMoments([0, 1, 2], 2)    // return (0 + 1^2 + 2^2)/3 = 5/3
+    rawMoments([1/4, 1/2, 1], -1)    // return (4 + 2 + 1)/3 = 5/3
 
 
 ### multiple exponents
@@ -38,21 +38,21 @@ With a single exponent, `rawMoments(samples, k)` return the single *k<sup>th</su
 The actual use case is to obtain multiple *k<sup>th</sup> order* raw moments in a single pass for faster processing of large arrays.
 The maximum order is the length of the parameter array and the results will be inserted in this Array before it is returned.
 
-		var rawMoments = require('raw-moments')
-		rawMoments([0,1,2], Array(4))    // returns [1, 5/3, 3, 17/3]
+    var rawMoments = require('raw-moments')
+    rawMoments([0,1,2], Array(4))    // returns [1, 5/3, 3, 17/3]
 
 Values in the second parameter array will be replaced with the actual result.
 
-		var rawMoments = require('raw-moments')
-		var results = [0, 0, 99]    //initial values not important, only the array length
-		rawMoments([2,2], results)    // results = [4, 8, 16]
+    var rawMoments = require('raw-moments')
+    var results = [0, 0, 99]    //initial values not important, only the array length
+    rawMoments([2,2], results)    // results = [4, 8, 16]
 
 ### edge cases
 
-		var rawMoments = require('raw-moments')
-		rawMoments([], Array(3))    // returns [NaN, NaN, NaN]
-		rawMoments([0,1,2])    // returns the simple average (5/3)
-		rawMoments([0,1,2], [])    // returns the empty set []
+    var rawMoments = require('raw-moments')
+    rawMoments([], Array(3))    // returns [NaN, NaN, NaN]
+    rawMoments([0,1,2])    // returns the simple average (5/3)
+    rawMoments([0,1,2], [])    // returns the empty set []
 
 
 
